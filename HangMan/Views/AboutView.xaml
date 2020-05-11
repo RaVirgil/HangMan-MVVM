@@ -1,0 +1,23 @@
+﻿<Window x:Class="HangMan.Views.AboutView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HangMan.Views"
+        DataContext="{StaticResource AboutViewModel}"
+        mc:Ignorable="d"
+        Title="About"  Height="450" Width="800" WindowStyle="ToolWindow" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF2C6AC5" Offset="0"/>
+            <GradientStop Color="#FF012B68" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    
+    <!-- Main grid with info about me -->
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="548" Margin="4.791,-47,4.791,-79" d:LayoutOverrides="LeftMargin, RightMargin">
+        <TextBlock x:Name="txtAbout" Margin="222.266,146.438,205.914,195.528" TextWrapping="Wrap" Text="Made by Radu Virgil Andrei Grupa 10LF283 Informatica" TextAlignment="Center" FontSize="29.333" d:LayoutOverrides="Height" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+    </Grid>    
+</Window>
